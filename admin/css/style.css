@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Square+Peg&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption,
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    overflow-y: hidden;
+}
+
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    background-color: #F2EBE9;
+    margin: 0px;
+}
+
+.contain-login {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.login-pic {
+    background-color: #903A3D;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-pic .orang {
+    width: 30%;
+}
+
+.login-pic .admin-area {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    top: 17vh;
+}
+
+.login-pic .obat {
+    position: absolute;
+    width: 7.5vw;
+    padding-bottom: 20%;
+    padding-left: 20%;
+}
+
+.login-pic .plaster {
+    position: absolute;
+    width: 7.5vw;
+    padding-bottom: 15%;
+    padding-right: 20%;
+}
+
+.login-pic .ambulance {
+    position: absolute;
+    width: 7.5vw;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.login-pic .hati {
+    position: absolute;
+    width: 7.5vw;
+    padding-top: 10%;
+    padding-right: 20%;
+}
+
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form .logo-login {
+    width: 13vw;
+    margin-bottom: 10vh;
+}
+
+.login-form-table tr td {
+    text-align: center;
+}
+
+.login-form form {
+    margin-top: 50px;
+    width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.login-form .login-form-input {
+    background-color: #FEF5ED;
+    /* background-color: #F3E9DD; */
+    width: 42vw;
+    height: 91px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #903A3D;
+    transition: .5s ease-in-out;
+}
+
+.login-form .login-form-input:focus {
+    border: 2px solid #903A3D;
+    /* background-color: #e2d2b6; */
+}
+
+.password {
+    margin-top: 30px;
+}
+
+/* card */
+.btn-dokter {
+    padding: 50px;
+    background-color: #903A3D;
+    color: aquamarine;
+}
+
+.forgot-password-container {
+    text-align: end;
+    margin-top: 15px;
+}
+
+.forgot-password {
+    font-size: 19px;
+    font-style: italic;
+    color: #903A3D;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.login-btn {
+    width: 40vw;
+    height: 70px;
+    background-color: #AED581;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 28px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #98bd6e;
+    font-weight: 600;
+}
+
+.login-btn:active {
+    background-color: #73944e;
+    font-weight: 600;
+}
+
+footer {
+    height: 100%;
+    margin: 0px;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #903A3D;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Square Peg", cursive;
+}
+
+/* pass */
+.show_pass {
+    position: absolute;
+    margin-top: -60px;
+    right: 0px;
+    margin-right: 4vw;
+    /* bottom: 0px; */
+    /* top: 0px; */
+    transform: translateY(10%);
+    font-size: 20px;
+    color: #4a4a4a;
+    cursor: pointer;
+    display: block;
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+}
+
+i.hilang-pass::before {
+    content: "\f070";
+}
+
+
+@media screen and (max-width:1200px) {
+    .login-form .login-form-input {
+        width: 42vw;
+        height: 80px;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .show_pass {
+        margin-top: -55px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .login-form .login-form-input {
+        width: 40vw;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .login-btn {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .show_pass {
+        margin-top: -45px;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .contain-login {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .login-pic {
+        background-color: #903A3D;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/1;
+    }
+
+    .orang {
+        display: none;
+    }
+
+    .login-pic .admin-area {
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        font-size: 4vw;
+        top: 10vh;
+    }
+
+    .login-pic .obat {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 0px;
+        right: 5px;
+    }
+
+    .login-pic .plaster {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 10px;
+        left: 8px;
+    }
+
+    .login-pic .ambulance {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 100px;
+        right: 20px;
+    }
+
+    .login-pic .hati {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 100px;
+        left: 10px;
+    }
+
+    .login-form {
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form .logo-login {
+        width: 37vw;
+        margin-top: -100px;
+        margin-bottom: 10px;
+    }
+
+    .login-form-table tr td {
+        text-align: center;
+    }
+
+    .login-form form {
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .login-form .login-form-input {
+        background-color: rgba(218, 204, 179, 0.5);
+        width: 65vw;
+        height: 43px;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .login-form .login-form-input:focus {
+        background-color: #c5b496;
+    }
+
+    .password {
+        margin-top: 18px;
+    }
+
+    .forgot-password-container {
+        text-align: start;
+        margin-top: 15px;
+    }
+
+    .forgot-password {
+        font-size: 10px;
+        font-style: italic;
+        color: #903A3D;
+        font-weight: 400;
+        margin-left: 43px;
+    }
+
+    .login-btn {
+        width: 75vw;
+        height: 42px;
+        background-color: #AED581;
+        border: 0;
+        border-radius: 15px;
+        margin-top: 16px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .login-btn:hover {
+        background-color: #98bd6e;
+    }
+
+    .login-btn:active {
+        background-color: #73944e;
+    }
+
+    footer {
+        height: 100%;
+        margin-top: 80px;
+    }
+
+    .copyright {
+        bottom: 0px;
+        color: #903A3D;
+        font-weight: bold;
+    }
+
+    .show_pass {
+        font-size: 15px;
+        margin-right: 17vw;
+        margin-top: -32px;
+    }
+}
+
+.login-pic .admin-area {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 0%;
+
+}
+
+@media screen and (max-height:786px) and (max-width:414px) {
+    .login-pic .obat {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 0px;
+        right: 5px;
+    }
+
+    .login-pic .plaster {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 10px;
+        left: 8px;
+    }
+
+    .login-pic .ambulance {
+        position: absolute;
+        width: 30vw;
+        opacity: 0.5;
+        top: 75px;
+        right: 20px;
+    }
+
+    .login-pic .hati {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 75px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-height:750px) and (max-width:414px) {
+    .login-pic .obat {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 0px;
+        right: 5px;
+    }
+
+    .login-pic .plaster {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 10px;
+        left: 8px;
+    }
+
+    .login-pic .ambulance {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 75px;
+        right: 20px;
+    }
+
+    .login-pic .hati {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 60px;
+        left: 10px;
+    }
+
+    .login-form .logo-login {
+        width: 37vw;
+        margin-top: -100px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-height:714px) and (max-width:414px) {
+    .login-pic .obat {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 0px;
+        right: 5px;
+    }
+
+    .login-pic .plaster {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 10px;
+        left: 8px;
+    }
+
+    .login-pic .ambulance {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 60px;
+        right: 20px;
+    }
+
+    .login-pic .hati {
+        position: absolute;
+        width: 25vw;
+        opacity: 0.5;
+        top: 45px;
+        left: 10px;
+    }
+
+    .login-form .logo-login {
+        width: 37vw;
+        margin-top: -100px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-height:686px) and (max-width:414px) {
+    .login-pic .obat {
+        position: absolute;
+        width: 20vw;
+        opacity: 0.5;
+        top: 0px;
+        right: 5px;
+    }
+
+    .login-pic .plaster {
+        position: absolute;
+        width: 20vw;
+        opacity: 0.5;
+        top: 10px;
+        left: 8px;
+    }
+
+    .login-pic .ambulance {
+        position: absolute;
+        width: 20vw;
+        opacity: 0.5;
+        top: 50px;
+        right: 20px;
+    }
+
+    .login-pic .hati {
+        position: absolute;
+        width: 20vw;
+        opacity: 0.5;
+        top: 40px;
+        left: 10px;
+    }
+
+    .login-form .logo-login {
+        height: 75px;
+        width: 100px;
+        margin-top: -100px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: 100%;
+        margin-top: 50px;
+    }
+}
